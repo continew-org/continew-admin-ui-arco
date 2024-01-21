@@ -12,7 +12,7 @@
   import checkPermission from '@/utils/permission';
   import dictItem from './item.vue';
 
-  const { proxy } = getCurrentInstance() as any;
+  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
 
   const dataList = ref<DataRecord[]>([]);
   const total = ref(0);

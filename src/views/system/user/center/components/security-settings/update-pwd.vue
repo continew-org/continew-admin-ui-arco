@@ -5,7 +5,7 @@
   import { useUserStore } from '@/store';
   import { encryptByRsa } from '@/utils/encrypt';
 
-  const { proxy } = getCurrentInstance() as any;
+  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
 
   const { t } = useI18n();
   const userStore = useUserStore();

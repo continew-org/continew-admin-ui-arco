@@ -3,7 +3,7 @@
   import { getToken } from '@/utils/auth';
   import checkPermission from '@/utils/permission';
 
-  const { proxy } = getCurrentInstance() as any;
+  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
 
   const dataList = ref<DataRecord[]>([]);
   const total = ref(0);

@@ -2,6 +2,7 @@
   "globals": {
     "Component": true,
     "ComponentPublicInstance": true,
+    "ComponentInternalInstance": true,
     "ComputedRef": true,
     "EffectScope": true,
     "ExtractDefaultPropTypes": true,

@@ -7,7 +7,7 @@
     onClose: () => void;
   }
   const props = withDefaults(defineProps<Props>(), {});
-  const { proxy } = getCurrentInstance() as any;
+  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
   const visible = ref(false);
   type Form = { name: string };
   const form: Form = reactive({

@@ -1,4 +1,6 @@
 /// <reference types="vite/client" />
+import type download from '@/components/crud/index';
+import type useDict from '@/utils/dict';
 
 declare module '*.vue' {
   import { DefineComponent } from 'vue';
@@ -6,6 +8,16 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>;
   export default component;
 }
+
+export {};
+declare module 'vue' {
+  interface ComponentCustomProperties {
+    // 调整成你要使用到的属性，在这里进行注册
+    download: typeof download;
+    useDict: typeof useDict;
+  }
+}
+
 interface ImportMetaEnv {
   readonly VITE_API_BASE_URL: string;
 }
@@ -25,6 +37,7 @@ declare global {
   export type {
     Component,
     ComponentPublicInstance,
+    ComponentInternalInstance,
     ComputedRef,
     InjectionKey,
     PropType,

@@ -4,7 +4,7 @@
   import { isLogin } from '@/utils/auth';
   import { bindSocial } from '@/api/system/user-center';
 
-  const { proxy } = getCurrentInstance() as any;
+  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
   const { t } = useI18n();
   const route = useRoute();
   const router = useRouter();
@@ -25,7 +25,7 @@
         router.push({
           name: (redirect as string) || 'Workplace',
         });
-        proxy.$notification.success(t('login.success'));
+        proxy!.$notification.success(t('login.success'));
       })
       .catch(() => {
         router.push({
@@ -55,7 +55,7 @@
             tab: 'security-setting',
           },
         });
-        proxy.$message.success(res.msg);
+        proxy!.$message.success(res.msg);
       })
       .catch(() => {
         router.push({
