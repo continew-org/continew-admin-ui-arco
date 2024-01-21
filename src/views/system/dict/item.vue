@@ -16,7 +16,7 @@
       required: true,
     },
   });
-  const { proxy } = getCurrentInstance() as any;
+  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
   const dataList = ref<DataRecord[]>([]);
   const colors = ref(['primary', 'success', 'warning', 'error', 'default']);
   const total = ref(0);

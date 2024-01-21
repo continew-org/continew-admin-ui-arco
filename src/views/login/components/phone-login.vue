@@ -5,7 +5,7 @@
   import { PhoneLoginReq } from '@/api/auth';
   import { BehaviorCaptchaReq, getSmsCaptcha } from '@/api/common/captcha';
 
-  const { proxy } = getCurrentInstance() as any;
+  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
   const { t } = useI18n();
   const router = useRouter();
   const userStore = useUserStore();

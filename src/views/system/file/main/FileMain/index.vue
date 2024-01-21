@@ -25,7 +25,7 @@
   } from '../../components/index';
   import 'viewerjs/dist/viewer.css';
 
-  const { proxy } = getCurrentInstance() as any;
+  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
   const route = useRoute();
   const fileStore = useFileStore();
   const loading = ref(false);

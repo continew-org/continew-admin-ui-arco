@@ -19,7 +19,7 @@
     generate,
   } from '@/api/tool/generator';
 
-  const { proxy } = getCurrentInstance() as any;
+  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
   const { form_type_enum, query_type_enum } = proxy.useDict(
     'form_type_enum',
     'query_type_enum',

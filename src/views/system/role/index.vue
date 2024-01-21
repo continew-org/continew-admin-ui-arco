@@ -12,7 +12,7 @@
   import { listMenuTree, listDeptTree } from '@/api/common';
   import checkPermission from '@/utils/permission';
 
-  const { proxy } = getCurrentInstance() as any;
+  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
   const { data_scope_enum, dis_enable_status_enum } = proxy.useDict(
     'data_scope_enum',
     'dis_enable_status_enum',

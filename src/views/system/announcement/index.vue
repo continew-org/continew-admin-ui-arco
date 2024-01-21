@@ -10,8 +10,8 @@
   } from '@/api/system/announcement';
   import checkPermission from '@/utils/permission';
 
-  const { proxy } = getCurrentInstance() as any;
-  const { announcement_type, announcement_status_enum } = proxy.useDict(
+  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
+  const { announcement_type, announcement_status_enum } = proxy!.useDict(
     'announcement_type',
     'announcement_status_enum',
   );
@@ -97,7 +97,7 @@
    */
   const reset = () => {
     form.value = {};
-    proxy.$refs.formRef?.resetFields();
+    proxy.$refs.formRef.resetFields();
   };
 
   /**

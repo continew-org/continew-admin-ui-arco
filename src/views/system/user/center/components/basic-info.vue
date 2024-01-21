@@ -4,7 +4,7 @@
   import { useI18n } from 'vue-i18n';
   import { useUserStore } from '@/store';
 
-  const { proxy } = getCurrentInstance() as any;
+  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
 
   const { t } = useI18n();
   const userStore = useUserStore();
@@ -46,7 +46,7 @@
    */
   const handleSave = () => {
     if (loading.value) return;
-    proxy.$refs.formRef.validate((valid: any) => {
+    proxy!.$refs.formRef.validate((valid: any) => {
       if (!valid) {
         loading.value = true;
         updateBasicInfo({
@@ -68,7 +68,7 @@
    * 重置
    */
   const handleReset = () => {
-    proxy.$refs.formRef.resetFields();
+    proxy!.$refs.formRef.resetFields();
   };
 </script>
 

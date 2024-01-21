@@ -11,7 +11,7 @@
   import { upload } from '@/api/common';
   import { useAppStore } from '@/store';
 
-  const { proxy } = getCurrentInstance() as any;
+  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
   const dataList = ref<DataRecord[]>([]);
   const isEdit = ref(false);
   const logoFile = ref<FileItem>({ uid: '-1' });
