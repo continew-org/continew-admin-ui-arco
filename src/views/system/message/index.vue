@@ -1,7 +1,7 @@
 <script lang="ts" setup>
   import { DataRecord, ListParam, list, del, read } from '@/api/system/message';
 
-  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
+  const { proxy } = getCurrentInstance() as any;
   const { message_type_enum } = proxy.useDict('message_type_enum');
   const dataList = ref<DataRecord[]>([]);
   const dataDetail = ref<DataRecord>({

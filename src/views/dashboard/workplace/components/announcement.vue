@@ -5,7 +5,7 @@
   } from '@/api/common/dashboard';
   import { DataRecord, get } from '@/api/system/announcement';
 
-  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
+  const { proxy } = getCurrentInstance() as any;
   const { announcement_type } = proxy.useDict('announcement_type');
 
   const dataList = ref<DashboardAnnouncementRecord[]>([]);

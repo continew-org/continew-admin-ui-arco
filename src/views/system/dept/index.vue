@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import { TreeNodeData, TableData, TableInstance } from '@arco-design/web-vue';
+  import { TreeNodeData, TableData } from '@arco-design/web-vue';
   import {
     DataRecord,
     ListParam,
@@ -12,8 +12,8 @@
   import { listDeptTree } from '@/api/common';
   import checkPermission from '@/utils/permission';
 
-  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
-  const { dis_enable_status_enum } = proxy!.useDict('dis_enable_status_enum');
+  const { proxy } = getCurrentInstance() as any;
+  const { dis_enable_status_enum } = proxy.useDict('dis_enable_status_enum');
 
   const dataList = ref<DataRecord[]>([]);
   const dataDetail = ref<DataRecord>({});
@@ -64,7 +64,7 @@
       .then((res) => {
         dataList.value = res.data;
         setTimeout(() => {
-          (proxy!.$refs.tableRef as TableInstance).expandAll();
+          proxy.$refs.tableRef.expandAll();
         }, 0);
       })
       .finally(() => {

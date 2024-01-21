@@ -6,7 +6,7 @@
   } from '@/api/system/user-center';
   import { socialAuth } from '@/api/auth';
 
-  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
+  const { proxy } = getCurrentInstance() as any;
   const socialBinds = ref<UserSocialBindRecord[]>([]);
   const giteeSocial = ref<UserSocialBindRecord>();
   const githubSocial = ref<UserSocialBindRecord>();
@@ -18,10 +18,10 @@
     listSocial().then((res) => {
       socialBinds.value = res.data;
       giteeSocial.value = socialBinds.value.find(
-        (item) => item.source === 'GITEE',
+        (item) => item.source === 'GITEE'
       );
       githubSocial.value = socialBinds.value.find(
-        (item) => item.source === 'GITHUB',
+        (item) => item.source === 'GITHUB'
       );
     });
   };
@@ -36,7 +36,7 @@
   const handleBind = (source: string, sourceDescription: string) => {
     const isBind = socialBinds.value.some((item) => item.source === source);
     if (isBind) {
-      proxy!.$modal.warning({
+      proxy.$modal.warning({
         title: `确认解除和${sourceDescription}平台的三方账号绑定吗?`,
         titleAlign: 'start',
         content: '解除绑定后，将无法使用该第三方账户登录到此账号',
@@ -44,13 +44,13 @@
         onOk: () => {
           unbindSocial(source).then((res) => {
             list();
-            proxy!.$message.success(res.msg);
+            proxy.$message.success(res.msg);
           });
         },
       });
       return;
     }
-    proxy!.$modal.info({
+    proxy.$modal.info({
       title: '提示',
       titleAlign: 'start',
       content: `确认和${sourceDescription}平台的三方账号绑定吗?`,

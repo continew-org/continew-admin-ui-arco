@@ -5,9 +5,9 @@
     listOperationLog,
   } from '@/api/monitor/log';
 
-  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
+  const { proxy } = getCurrentInstance() as any;
   const { success_failure_status_enum } = proxy.useDict(
-    'success_failure_status_enum',
+    'success_failure_status_enum'
   );
 
   const operationLogList = ref<OperationLogRecord[]>([]);

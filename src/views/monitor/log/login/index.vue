@@ -5,8 +5,8 @@
     listLoginLog,
   } from '@/api/monitor/log';
 
-  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
-  const { success_failure_status_enum } = proxy!.useDict(
+  const { proxy } = getCurrentInstance() as any;
+  const { success_failure_status_enum } = proxy.useDict(
     'success_failure_status_enum',
   );
 
@@ -55,7 +55,7 @@
    * 重置
    */
   const resetQuery = () => {
-    proxy!.$refs.queryRef.resetFields();
+    proxy.$refs.queryRef.resetFields();
     handleQuery();
   };
 

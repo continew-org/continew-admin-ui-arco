@@ -10,7 +10,7 @@
   import VueJsonPretty from 'vue-json-pretty';
   import 'vue-json-pretty/lib/styles.css';
 
-  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
+  const { proxy } = getCurrentInstance() as any;
   const { copy, copied } = useClipboard();
   const systemLogList = ref<SystemLogRecord[]>([]);
   const systemLog = ref<SystemLogDetailRecord>({
@@ -95,7 +95,7 @@
   };
   watch(copied, () => {
     if (copied.value) {
-      proxy!.$message.success('复制成功');
+      proxy.$message.success('复制成功');
     }
   });
 
@@ -110,7 +110,7 @@
    * 重置
    */
   const resetQuery = () => {
-    proxy!.$refs.queryRef.resetFields();
+    proxy.$refs.queryRef.resetFields();
     handleQuery();
   };
 

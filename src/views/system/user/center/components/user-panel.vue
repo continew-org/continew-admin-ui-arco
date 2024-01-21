@@ -6,7 +6,7 @@
   import { VueCropper } from 'vue-cropper';
   import 'vue-cropper/dist/index.css';
 
-  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
+  const { proxy } = getCurrentInstance() as any;
   const userStore = useUserStore();
   const cropperRef = ref();
   const visible = ref(false);

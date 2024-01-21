@@ -5,7 +5,7 @@
   import { EmailLoginReq } from '@/api/auth';
   import { getMailCaptcha } from '@/api/common/captcha';
 
-  const { proxy } = getCurrentInstance() as ComponentInternalInstance;
+  const { proxy } = getCurrentInstance() as any;
   const { t } = useI18n();
   const router = useRouter();
   const userStore = useUserStore();
@@ -47,7 +47,7 @@
    */
   const handleSendCaptcha = () => {
     if (captchaLoading.value) return;
-    proxy!.$refs.formRef.validateField('email', (valid: any) => {
+    proxy.$refs.formRef.validateField('email', (valid: any) => {
       if (!valid) {
         captchaLoading.value = true;
         captchaBtnNameKey.value = 'login.captcha.ing';
@@ -67,7 +67,7 @@
                 resetCaptcha();
               }
             }, 1000);
-            proxy!.$message.success(res.msg);
+            proxy.$message.success(res.msg);
           })
           .catch(() => {
             resetCaptcha();
@@ -106,7 +106,7 @@
               ...othersQuery,
             },
           });
-          proxy!.$notification.success(t('login.success'));
+          proxy.$notification.success(t('login.success'));
         })
         .catch(() => {
           form.value.captcha = '';
