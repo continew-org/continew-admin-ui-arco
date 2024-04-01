@@ -27,7 +27,6 @@ const recursionMenu = (
 };
 const useAppStore = defineStore('app', {
   state: (): AppState => ({ ...defaultSettings, config: {} }),
-
   getters: {
     appCurrentSetting(state: AppState): AppState {
       return { ...state };
@@ -155,6 +154,7 @@ const useAppStore = defineStore('app', {
         );
     },
   },
+  persist: true,
 });
 
 export default useAppStore;
