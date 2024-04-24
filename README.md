@@ -59,10 +59,11 @@ ContiNew Admin（Continue New Admin）持续迭代优化的前后端分离中后
 
 ## 项目源码
 
-|       | 前端源码                                   | 后端源码                                |
-| ----- | -------------------------------------------- | ----------------------------------------- |
-| GitHub | [github.com/Charles7c/continew-admin-ui](https://github.com/Charles7c/continew-admin-ui) | [github.com/Charles7c/continew-admin](https://github.com/Charles7c/continew-admin) |
-| Gitee | [gitee.com/Charles7c/continew-admin-ui](https://gitee.com/Charles7c/continew-admin-ui) | [gitee.com/Charles7c/continew-admin](https://gitee.com/Charles7c/continew-admin) |
+|            | Gitee                                                                                     | GitHub                                                                             |
+|------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| 前端         | [gitee.com/continew/continew-admin-ui-arco](https://gitee.com/continew/continew-admin-ui-arco) | [github.com/Charles7c/continew-admin-ui-arco](https://github.com/Charles7c/continew-admin-ui-arco) |
+| 后端         | [gitee.com/continew/continew-admin](https://gitee.com/continew/continew-admin)            | [github.com/Charles7c/continew-admin](https://github.com/Charles7c/continew-admin)     |
+| **3.0 前端** | [gitee.com/continew/continew-admin-ui](https://gitee.com/continew/continew-admin-ui)      | [github.com/Charles7c/continew-admin-ui](https://github.com/Charles7c/continew-admin-ui) |
 
 ##  系统功能
 
