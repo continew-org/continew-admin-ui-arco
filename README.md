@@ -1,9 +1,9 @@
 # ContiNew Admin UI
 
-<a href="https://github.com/Charles7c/continew-admin-ui/blob/dev/LICENSE" target="_blank">
+<a href="https://github.com/Charles7c/continew-admin-ui-arco/blob/dev/LICENSE" target="_blank">
 <img src="https://img.shields.io/badge/License-Apache--2.0-blue.svg" alt="License" />
 </a>
-<a href="https://github.com/Charles7c/continew-admin-ui" target="_blank">
+<a href="https://github.com/Charles7c/continew-admin-ui-arco" target="_blank">
 <img src="https://img.shields.io/badge/RELEASE-v2.5.0-%23ff3f59.svg" alt="Release" />
 </a>
 <a href="https://cn.vuejs.org/" target="_blank">
@@ -33,6 +33,8 @@
 
 📚 [在线文档](https://doc.charles7c.top) | 🚀 [演示地址](https://cnadmin.charles7c.top)（账号/密码：admin/admin123）
 
+> 全新 3.0 已经发布，点击[前往](https://gitee.com/continew/continew-admin-ui)
+
 ## 简介
 
 ContiNew Admin（Continue New Admin）持续迭代优化的前后端分离中后台管理系统框架。开箱即用，持续提供舒适的开发体验，依托开源协作模式，提升技术透明度、放大集体智慧、共创优秀实践，源源不断地为企业级项目开发提供助力。
@@ -61,9 +63,9 @@ ContiNew Admin（Continue New Admin）持续迭代优化的前后端分离中后
 
 |            | Gitee                                                                                     | GitHub                                                                             |
 |------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| 前端         | [gitee.com/continew/continew-admin-ui-arco](https://gitee.com/continew/continew-admin-ui-arco) | [github.com/Charles7c/continew-admin-ui-arco](https://github.com/Charles7c/continew-admin-ui-arco) |
+| 前端         | [gitee.com/continew/continew-admin-ui-arco](https://gitee.com/continew/continew-admin-ui-arco) | [github.com/Charles7c/continew-admin-ui-arco](https://github.com/Charles7c/continew-admin-ui-arco-arco) |
 | 后端         | [gitee.com/continew/continew-admin](https://gitee.com/continew/continew-admin)            | [github.com/Charles7c/continew-admin](https://github.com/Charles7c/continew-admin)     |
-| **3.0 前端** | [gitee.com/continew/continew-admin-ui](https://gitee.com/continew/continew-admin-ui)      | [github.com/Charles7c/continew-admin-ui](https://github.com/Charles7c/continew-admin-ui) |
+| **3.0 前端** | [gitee.com/continew/continew-admin-ui](https://gitee.com/continew/continew-admin-ui)      | [github.com/Charles7c/continew-admin-ui](https://github.com/Charles7c/continew-admin-ui-arco) |
 
 ##  系统功能
 
@@ -282,7 +284,7 @@ ContiNew Admin 的分支目前分为下个大版本的开发分支和上个大�
 2. 然后，将 fork 过来的项目（即您的项目）克隆到本地
 3. 切换到当前仍在维护的分支（请务必充分了解分支使用说明，可进群联系维护者确认）
 4. 开始修改代码，修改完成后，将代码 commit 并 push 到您的远程仓库
-5. 在 Gitee 或 Github 上新建 pull request（pr），选择好源和目标，按模板要求填写说明信息后提交即可（多多参考 [已批准合并的 pr 记录](https://github.com/Charles7c/continew-admin-ui/pulls?q=is%3Apr+is%3Amerged)，会大大增加批准合并率）
+5. 在 Gitee 或 Github 上新建 pull request（pr），选择好源和目标，按模板要求填写说明信息后提交即可（多多参考 [已批准合并的 pr 记录](https://github.com/Charles7c/continew-admin-ui-arco/pulls?q=is%3Apr+is%3Amerged)，会大大增加批准合并率）
 6. 最后，耐心等待维护者合并您的请求即可
 
 请记住，如果您有任何疑问或需要帮助，我们将随时提供支持。
@@ -309,7 +311,7 @@ ContiNew Admin 的分支目前分为下个大版本的开发分支和上个大�
 </div>
 <details>
 <summary>无加群意愿</summary>
-如无加群意愿，欢迎在 <a href="https://github.com/Charles7c/continew-admin-ui/issues" target="_blank">Issues</a> 中反馈交流~ 🍻
+如无加群意愿，欢迎在 <a href="https://github.com/Charles7c/continew-admin-ui-arco/issues" target="_blank">Issues</a> 中反馈交流~ 🍻
 </details>
 
 ## 鸣谢
@@ -332,5 +334,5 @@ ContiNew Admin 的分支目前分为下个大版本的开发分支和上个大�
 
 ## License
 
-- 遵循 <a href="https://github.com/Charles7c/continew-admin-ui/blob/dev/LICENSE" target="_blank">Apache-2.0</a> 开源许可协议
+- 遵循 <a href="https://github.com/Charles7c/continew-admin-ui-arco/blob/dev/LICENSE" target="_blank">Apache-2.0</a> 开源许可协议
 - Copyright © 2022-present <a href="https://blog.charles7c.top" target="_blank">Charles7c</a>
